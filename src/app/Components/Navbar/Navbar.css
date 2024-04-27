@@ -25,5 +25,8 @@
       display: none;
     }
   }
+ .backdrop-lg{
+  backdrop-filter: blur(16px);
+ } 
   
   
