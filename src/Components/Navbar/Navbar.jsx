@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import logo2 from "./../../imgs/logos/Group 122.svg";
-import logo from "./../../imgs/logos/logo1.png";
+import logo from "../../imgs/logos/logo1.png"
 import Image from "next/image";
 import {
   Box,
@@ -89,7 +89,7 @@ export default function Navbar() {
                 mx={"2vw"}
               >
                 <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
-                  <Link href="/AboutUs">
+                  <Link href="/About">
                     About Us
                   </Link>
                 </Button>

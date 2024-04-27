@@ -3,9 +3,9 @@ import {Box,Center ,Spacer,Stack,Flex ,Text,Heading,useColorModeValue , extendTh
 import Typewriter from 'typewriter-effect';
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Link from "next/link";
-import backimg from "./../../../imgs/backimg1.png";
-import mentor from "./../../../imgs/mentor_hero.png";
-import student from "./../../../imgs/student_hero.png";
+import backimg from "../../../../imgs/backimg1.png";
+import student from "../../../../imgs/student_hero.png";
+import mentor from "../../../../imgs/mentor_hero.png"
 import Image from "next/image";
 
 import { Icon } from "@chakra-ui/react";

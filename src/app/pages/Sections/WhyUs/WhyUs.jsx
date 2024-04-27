@@ -1,12 +1,12 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
-import mentorship  from "./../../../imgs/Vecto 2.png"
-import workshop from "./../../../imgs/Group 165 1.png"
-import revision from "./../../../imgs/Group 162 1.png"
-import errorBook from "./../../../imgs/Group 163.png"
-import planner from "./../../../imgs/Group 164.png"
-import growthMeter from "./../../../imgs/Group 166 2 1.png"
+import mentorship  from "../../../../imgs/Vecto 2.png"
+import workshop from "../../../../imgs/Group 165 1.png"
+import revision from "../../../../imgs/Group 162 1.png"
+import errorBook from "../../../../imgs/Group 163.png"
+import planner from "../../../../imgs/Group 164.png"
+import growthMeter from "../../../../imgs/Group 166 2 1.png"
 import Image from 'next/image';
 export default function WhyUs() {
   return (

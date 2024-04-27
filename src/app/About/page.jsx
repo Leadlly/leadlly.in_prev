@@ -1,9 +1,9 @@
 import React from 'react'
-import features from "../imgs/features.svg"
-import teamwork from '../imgs/teamwork.svg'
-import explaination from '../imgs/explaination.png'
-import holding_hand from '../imgs/holding_hand.png'
-import object1 from '../imgs/object1.png'
+import features from "../../imgs/features.svg"
+import teamwork from '../../imgs/teamwork.svg'
+import explaination from '../../imgs/explaination.png'
+import holding_hand from '../../imgs/holding_hand.png'
+import object1 from '../../imgs/object1.png'
 import Image from 'next/image'
 export default function AboutUs() {
   return (

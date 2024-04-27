@@ -1,13 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { img } from "@nextui-org/react";
-import bgimg from "./../../../imgs/Vector60.png"
+import bgimg from "../../../../imgs/Vector60.png"
 
-import knocking from "./../../../imgs/Group 203.png"
-import backlogs from "./../../../imgs/backlogs.png"
-import distractions from "./../../../imgs/distractions.png"
-import procastination from "./../../../imgs/procastination.png"
-import anxiety from "./../../../imgs/anxiety.png"
+import knocking from "../../../../imgs/Group 203.png"
+import backlogs from "../../../../imgs/backlogs.png"
+import distractions from "../../../../imgs/distractions.png"
+import procastination from "../../../../imgs/procastination.png"
+import anxiety from "../../../../imgs/anxiety.png"
+
 import Image from "next/image";
 
 export default function BouncyCardsFeatures(){

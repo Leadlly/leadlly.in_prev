@@ -4,8 +4,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
-import smily from "./../../imgs/smily.png"
-import logo from "./../../imgs/logos/Group 122.svg"
+import smily from "../../imgs/smily.png"
+import logo from "../../imgs/logos/logo1.png"
 import Image from "next/image";
 export default function Footer(){
 
