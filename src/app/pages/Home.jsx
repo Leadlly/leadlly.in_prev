@@ -6,7 +6,8 @@ import Testimonial from './Sections/Testimonials/Testimonial.jsx';
 
 
 export default function Main() {
-  return (<div className="bg-[#fefbff]">
+  return (
+  <div className="bg-[#fefbff]">
     <div className=' w-screen overflow-clip'>
       <Hero/>
       <Problem/>
