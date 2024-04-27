@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["onest", "sans-serif"],
+        sans: ["Onest", "sans-serif"],
       },
       borderRadius: {
         none: "0",
