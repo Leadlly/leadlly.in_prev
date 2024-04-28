@@ -41,7 +41,7 @@ const Home = () => {
             
             <div>
             < h4 className="text-[1rem] leading-tight font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
-            <Button  bgColor={"#ffb35c"} size={"lg"} ml={"60%"} rounded={"full"} color={"white"} fontWeight={"semibold"} _hover={{bgColor:"#f5ebff",color:"black"}} mt={5}><Link href="/about-us">Learn More</Link></Button>
+            <Button  bgColor={"#ffb35c"} size={"lg"} ml={"60%"} rounded={"full"} color={"white"} fontWeight={"semibold"} _hover={{bgColor:"#f5ebff",color:"black"}} mt={5}><Link href="/About">Learn More</Link></Button>
             </div>
   </div>
           <div className=" absolute right-[7vw] w-[20%] h-auto ">
@@ -85,7 +85,7 @@ const Home = () => {
         < h4 className="text-[0.8rem] leading-tight py-4 font-sans font-semibold  "> Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals. </h4>
         
          <Button  bgColor={"#ffb35c"} ml={16} rounded={"full"} color={"white"} fontWeight={"semibold"} >
-         <Link href="/about-us">Learn More</Link>
+         <Link href="/About">Learn More</Link>
   </Button>
         </div>
         </div>
