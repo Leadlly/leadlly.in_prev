@@ -125,7 +125,7 @@ export default function Navbar() {
                 </DropdownTrigger>
                 <DropdownMenu aria-label="Example with disabled actions" >
                
-                  <DropdownItem  onClick={isOpen ? onClose : onOpen} ><Link href="/about-us">
+                  <DropdownItem  onClick={isOpen ? onClose : onOpen} ><Link href="/About">
                     <b>About Us</b>
                   </Link></DropdownItem>
                   <DropdownItem  onClick={isOpen ? onClose : onOpen}><Link href="/Courses">

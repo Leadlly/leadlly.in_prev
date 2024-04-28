@@ -25,7 +25,7 @@ export default function Footer(){
             <h2 className="text-[0.8rem] md:text-[1rem]">
             <a href="https://forms.gle/rGuHFN2JwULDVVGAA">Contact Us</a>
             <br/> <Link href="/">Become a Mentor</Link>
-            <br/> <Link href="/about-us">About Us</Link>
+            <br/> <Link href="/About">About Us</Link>
             <br/> <a href="https://question-bank-web-flame.vercel.app" target="_blank">Question Bank</a>
             
             </h2> 
