@@ -128,7 +128,7 @@ export default function Navbar() {
                   <DropdownItem  onClick={isOpen ? onClose : onOpen} ><Link href="/About">
                     <b>About Us</b>
                   </Link></DropdownItem>
-                  <DropdownItem  onClick={isOpen ? onClose : onOpen}><Link href="/courses">
+                  <DropdownItem  onClick={isOpen ? onClose : onOpen}><Link href="/Courses">
                     <b>Courses</b>
                   </Link></DropdownItem>
                   
