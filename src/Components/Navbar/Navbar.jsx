@@ -42,8 +42,8 @@ export default function Navbar() {
   
 
   return (
-    <div id="navFix" className="flex h-30 rounded-2xl backdrop-lg mx-auto ">
-      <Navbar_ maxWidth="full" className="rounded-2xl h-16 mt-5 shadow-xl ring-slate-200 ring-2 ring-offset-2" >
+    <div id="navFix" className="flex h-30 rounded-2xl mx-auto ">
+      <Navbar_ maxWidth="full" className="rounded-2xl backdrop-lg h-16 mt-5 shadow-xl ring-slate-200 ring-2 ring-offset-2" >
       <Box
         
         
@@ -123,9 +123,9 @@ export default function Navbar() {
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}/>
                 </DropdownTrigger>
-                <DropdownMenu aria-label="Example with disabled actions" >
+                <DropdownMenu className="z-10 inline-flex flex-col items-center justify-center  outline-none box-border text-small bg-content1 rounded-large w-full p-1 min-w-[200px]" aria-label="Example with disabled actions" >
                
-                  <DropdownItem  onClick={isOpen ? onClose : onOpen} ><Link href="/about-us">
+                  <DropdownItem  onClick={isOpen ? onClose : onOpen} ><Link href="/About">
                     <b>About Us</b>
                   </Link></DropdownItem>
                   <DropdownItem  onClick={isOpen ? onClose : onOpen}><Link href="/courses">

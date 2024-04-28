@@ -5,7 +5,7 @@ import { FaYoutube } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import smily from "../../imgs/smily.png"
-import logo from "../../imgs/logos/logo1.png"
+import Logo from "../../imgs/logos/Group 122.359fbdf94648632fa2326ddddf001f55.svg"
 import Image from "next/image";
 export default function Footer(){
 
@@ -16,7 +16,7 @@ export default function Footer(){
             <div className="flex  flex-col w-[30vw] h-[40vh] justify-start gap-[5%] ">
 
             <div className="inline-block  ml-[3vw] mt-3 ">
-                <Image height={56} width={206} className="md:h-14" src={logo} alt="" /></div>
+                <Image height={56} width={206} className="md:h-14" src={Logo} alt="" /></div>
             <div className=" mx-auto md:w-[30vw] md:mx-auto md:ml-7 w-[55vw] pl-2 "><p className="text-purple-950 text-left text-[0.8rem] md:text-[1rem] ">At Leadlly, we believe every student has the potential to excel. We're a passionate team dedicated to helping school-going students reach their academic goals through a unique blend of technology and personalized mentorship.</p></div>
             </div>
             
@@ -35,10 +35,10 @@ export default function Footer(){
 
             <div className="flex  justify-center md:gap-2 mx-auto  bg-purple-100  ">
             
-            <div className="inline-block  my-auto cursor-pointer "><a ><FaInstagram className="md:size-8 size-5"/></a></div>
-            <div className="inline-block my-auto cursor-pointer"><a><FaLinkedin className="md:size-8 size-5"/></a></div>
-            <div className="inline-block  my-auto cursor-pointer"><a><FaSquareXTwitter className="md:size-8 size-5"/></a></div>
-            <div className="inline-block  my-auto cursor-pointer"><a> <FaYoutube className="md:size-8 size-5"/></a></div>
+            <div className="inline-block  my-auto cursor-pointer "><a href="https://www.instagram.com/leadlly.in"><FaInstagram className="md:size-8 size-5"/></a></div>
+            <div className="inline-block my-auto cursor-pointer"><a href="https://www.linkedin.com/company/leadlly-edu/"><FaLinkedin className="md:size-8 size-5"/></a></div>
+            <div className="inline-block  my-auto cursor-pointer"><a href="https://twitter.com/leadlly_ed"><FaSquareXTwitter className="md:size-8 size-5"/></a></div>
+           
            </div></div>
 
           <div className=" hidden md:flex my-auto ml-[20vw] h-full "> <Image src={smily} alt="" className="my-auto"/></div>
