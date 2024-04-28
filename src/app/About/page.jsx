@@ -5,7 +5,8 @@ import explaination from '../../imgs/explaination.png'
 import holding_hand from '../../imgs/holding_hand.png'
 import object1 from '../../imgs/object1.png'
 import Image from 'next/image'
-export default function AboutUs() {
+
+export default function About() {
   return (
 <>
 
