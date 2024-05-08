@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const { nextui } = require("@nextui-org/react");
+const { Urbanist } = require('next/font/google');
 
 module.exports = {
   content: [
@@ -13,6 +14,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Onest", "sans-serif"],
+        Urbanist: [Urbanist]
       },
       borderRadius: {
         none: "0",
