@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google';
 import { Eye, EyeOff, Lock, User,close } from "lucide-react";
 import Profileinfro from '@/Components/ProfileInfo/Profileinfro';
+import Script from 'next/script';
+import axios from 'axios';
 
 export default function Courses() {
     const [focus, setFocus] = useState(null);
@@ -27,6 +29,66 @@ export default function Courses() {
   const closeSignup = () => {setShowSignup(false)
   setShowLogin(true)
   };
+
+  const server = "http://localhost:4000"
+  const [courses, setCourses] = useState([])
+
+  const getCourse = async() =>{
+     try {
+      const { data } = await axios.get(`${server}/api/course/all`, {
+        withCredentials: true,
+      });
+
+      setCourses(data.courses)
+  
+     } catch (error) {
+      console.log(error)
+     }
+  }
+
+  useEffect(()=>{
+ getCourse()
+  }, [])
+  
+  const checkout = async(itemId) =>{
+    try {
+   
+      const { data } = await axios.post(`${server}/api/course/payment/${itemId}`, {
+        withCredentials: true,
+      });
+  
+      const options = {
+        key: 'rzp_test_Nym6cfhSoZpgzB',
+        amount: data.order.amount,
+        currency: "INR",
+        name: "Leadlly",
+        description: "Test Transaction",
+        order_id: data.order_id,
+        callback_url: `http:localhost:4000/course/paymentVerification`,
+        prefill: {
+          name: "Shivang Yadav",
+          email: "shivang.yadav@leadlly.in",
+          contact: "9000090000",
+        },
+        notes: {
+          address: "Razorpay Corporate Office",
+        },
+        theme: {
+          color: "#8563bf",
+        },
+      };
+
+      console.log(window, "hello")
+      const razor = new window.Razorpay(options);
+      razor.open();
+  
+    ;
+    } catch (error) {
+            
+      console.log(error);
+    }
+  }
+
   useEffect(() => {
     // Check if the ref is assigned before trying to access its properties
     if (emailRef.current) {
@@ -35,33 +97,29 @@ export default function Courses() {
   }, []);
 
   return (
+    <>
+      <Script
+        id="razorpay-checkout-js"
+        src="https://checkout.razorpay.com/v1/checkout.js"
+      />
+   <div>
     <div className='m-[60px]'>
       <div className='flex justify-between gap-5'>
-        <div className='shadow-md border-1 max-w-[33.%] rounded-xl p-[15px]'>
+       {
+        courses && courses.map((item) => (
+          <div className='shadow-md border-1 max-w-[33.%] rounded-xl p-[15px]'>
           <div>
             <Image src={CardImage} className='mb-[15px]' />
-            <h1>Cource Title</h1>
-            <p>Cource Discription</p>
+            <h1>{item.title}</h1>
+            <p>{item.description}</p>
+            <b>INR {item.price}</b>
           </div>
-          <button onClick={openLogin} className='mt-[15px] text-[12px] rounded-md bg-blue-800 p-[10px] text-white flex items-center'>Buy Now</button>
+          <button onClick={() => checkout(item._id)} className='mt-[15px] text-[12px] rounded-md bg-blue-800 p-[10px] text-white flex items-center'>Buy Now</button>
         </div>
+        ))
+       }
 
-        <div className='shadow-md border-1 max-w-[33.%] rounded-xl p-[15px]'>
-          <div>
-            <Image src={CardImage} className='mb-[15px]' />
-            <h1>Cource Title</h1>
-            <p>Cource Discription</p>
-          </div>
-          <button onClick={openLogin} className='mt-[15px] text-[12px] rounded-md bg-blue-800 p-[10px] text-white flex items-center'>Buy Now</button>
-        </div>
-
-        <div className='shadow-md border-1 max-w-[33.%] rounded-xl p-[15px]'>
-          <div>
-            <Image src={CardImage} className='mb-[15px]' />
-            <h1>Cource Title</h1>
-            <p>Cource Discription</p>
-          </div>
-          <button onClick={openLogin} className='mt-[15px] text-[12px] rounded-md bg-blue-800 p-[10px] text-white flex items-center'>Buy Now</button>
+     
         </div>
         {/* Repeat for other course cards */}
       </div>
@@ -247,5 +305,6 @@ export default function Courses() {
         <Profileinfro Fillinfo={Fillinfo} setFillinfo={setFillinfo}/>
       )}
     </div>
+    </>
   );
 }
