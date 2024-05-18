@@ -80,7 +80,7 @@ export default function Navbar() {
             /> */}
             <HStack spacing={8} alignItems={"center"}>
               <HStack
-                bg={useColorModeValue("purple.100","gray-700" )}
+                 color="purple.500"
                 rounded={20}
                 as={"nav"}
                 spacing={4}
@@ -88,20 +88,33 @@ export default function Navbar() {
                 id="myDIV"
                 mx={"2vw"}
               >
-                <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
+                <Button variant="none"  className="text-3xl font-sans  ">
                   <Link href="/About">
                     About Us
                   </Link>
                 </Button>
-
-                <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
-                  <Link href="/Courses">
+                <Button variant="none"  className="text-3xl font-sans ">
+                  <Link href="/About">
+                    Reviews
+                  </Link>
+                </Button>
+                <Button variant="none"  className="text-3xl font-sans ">
+                  <Link href="/About">
                     Courses
                   </Link>
                 </Button>
-                <Button variant="none"  className="text-3xl font-sans hover:bg-[#fefbff]">
-                  <a href="https://forms.gle/rGuHFN2JwULDVVGAA">Contact Us</a>
+
+                <Button variant="none"  className="text-3xl font-sans">
+                  <Link href="/Courses">
+                   Become a mentor
+                  </Link>
                 </Button>
+                
+                <button className="bg-[#FFB35D]  text-1xl font-sans  py-[0.7rem] px-[1rem]  rounded-[50px]  text-white ">
+                <Link href="/Courses">
+                   Login/Signup
+                  </Link>
+                </button>
                 
 
                 
