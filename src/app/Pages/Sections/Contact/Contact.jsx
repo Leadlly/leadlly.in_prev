@@ -28,7 +28,7 @@ export const Contact = () => {
         </Heading>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-evenly w-full px-4 md:px-20 py-10 rounded-xl">
-        <div className="flex flex-col items-staret justify-between w-full md:w-2/3 lg:w-1/2 p-5">
+        <div className="flex flex-col items-start justify-between w-full md:w-2/3 lg:w-1/2 p-5">
           <div className=" bg-[#eee4fb] rounded-2xl p-6 max-w-xl w-full h-40vh flex flex-col items-start">
             <h2 className="text-2xl font-bold pb-4">Contact Us</h2>
             <div className="w-1/2 h-1 bg-[#8000ff] mb-4"></div>
