@@ -2,7 +2,7 @@ import { Heading } from '@chakra-ui/react';
 import solution from "../../../assets/solution.png"
 import React from 'react'
 import Image from 'next/image';
-import vector from "../../../assets/vector.png";
+import vector from "../../../assets/Vector.png";
 
 const Solutions = () => {
   return (
