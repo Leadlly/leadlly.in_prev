@@ -98,3 +98,102 @@
   line-height: 16px;
   font-weight: 400;
 }
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carousel-button {
+    top: 90%;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.5rem;
+  }
+
+  .button1 {
+    left: 0.5rem;
+  }
+
+  .button2 {
+    right: 0.5rem;
+  }
+
+  .carousel-item {
+    padding: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-item-inner {
+    padding: 10px;
+    
+  }
+
+  .carousel-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .center-item .title {
+    font-size: 10px;
+    margin-left: 0.5rem;
+  }
+
+  .center-item .content {
+    font-size: 0.5rem;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .content {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-button {
+    top: 85%;
+    font-size: 1rem;
+  }
+
+  .button1 {
+    left: 0.2rem;
+  }
+
+  .button2 {
+    right: 0.2rem;
+  }
+
+  .carousel-item {
+    padding: 10px;
+    margin-top: 1rem;
+  }
+
+  .carousel-item-inner {
+    padding: 0px;
+  }
+
+  .carousel-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .center-item .title {
+    font-size: 14px;
+  }
+
+  .center-item .content {
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+}

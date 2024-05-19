@@ -26,16 +26,16 @@ const ComponentName = () => {
               xl: "4rem",
             }}
           >
-            <span className="md:text-[2rem] lg:text-[35px]">
+            <span className="para md:text-[2rem] lg:text-[35px]">
               Let's hear from
             </span>
             <br />
-            <span className="gradient-text text-[130px]">Our Learners</span>
+            <span className="heading gradient-text text-[130px]">Our Learners</span>
           </Heading>
         </div>
         <Carousel />
-        <div className="text-center w-full mt-[3rem]">
-          <button className="bg-[#FFB35C] text-center font-normal flex items-center gap-[10px] text-[26px] shadow-md hover:shadow-none py-[0.8rem] px-[3rem] rounded-[50px] text-white mx-auto">
+        <div className="contact text-center w-full mt-[3rem]">
+          <button className="contact-button bg-[#FFB35C] text-center font-normal flex items-center gap-[10px] text-[26px] shadow-md hover:shadow-none py-[0.8rem] px-[3rem] rounded-[50px] text-white mx-auto">
             Discover more
             <Image src={vector} alt="vector" />
           </button>

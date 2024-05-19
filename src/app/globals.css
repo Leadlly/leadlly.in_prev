@@ -67,15 +67,87 @@ body {
     font-size: 3rem !important;
   }
 }
-@media (min-width: 300px) and (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1360px) {
   .heading {
     font-size: 3rem !important;
   }
   .card-container {
-    height: 10vh;
+    padding: 0.5rem;
+    width: 50% !important;
+    height: 40vh !important;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading {
+    font-size: 3rem !important;
+  }
+  .contact-button{
+    width: 40vw !important;
+    font-size: 0.9rem !important;
+  }
+  .card-container {
+    padding: 0.5rem;
+    width: 50% !important;
+    height: 30vh !important;
 
+  }
+
+ .card{
+    margin-left: 0rem !important;
+  }
+  .contact{
+    margin-left: 0rem !important;
+  }
+}
+@media (min-width: 540px) and (max-width: 768px) {
+  .heading {
+    font-size: 3rem !important;
+  }
+  .contact-button{
+    width: 40vw !important;
+    font-size: 0.9rem !important;
+    margin: 0 !important;
+  }
+  .card-container {
+    padding: 0.5rem;
+    width: 50% !important;
+    height: 45vh !important;
+  }
+  .card{
+    margin: 0 !important;
+  }
+  .contact{
+    margin-left: 0 !important;
+  }
+  .para{
+    font-size: 1.2rem;
+  }
+  
+}
+@media (min-width: 250px) and (max-width: 540px) {
+  .heading {
+    font-size: 3rem !important;
+  }
+  .card-container {
+    padding: 0.5rem;
+    width: 90% !important;
+    height: 45vh !important;
+  }
+  .card{
+    margin: 0 !important;
+  }
+  .contact{
+    margin-left: 0 !important;
+  }
+.contact-button{
+  margin: 0 !important;
+  width: 80vw !important;
+  font-size: 1rem !important;
+}
+.para{
+  font-size: 1rem;
+}
+}
 
 .text-gradient {
   background: linear-gradient(
@@ -184,7 +256,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 1rem;
-  width: 30vw; /* Relative width */
+  width: 30vw; 
   align-items: center;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -206,8 +278,8 @@ body {
   justify-content: center;
   background-color: #eee4fb;
   border-radius: 20px;
-  width: 40%; /* You can keep this if you want a default width */
-  height: 50vh; /* You can keep this if you want a default height */
+  width: 30%; 
+  height: 40vh; /* You can keep this if you want a default height */
   max-width: 90%; /* Limiting maximum width to 90% of the container */
   max-height: 80vh; /* Limiting maximum height to 80% of the viewport height */
   
@@ -216,7 +288,7 @@ body {
 .card-content {
   background-color: #fff;
   border-radius: 20px;
-  width: 100%; /* Relative width */
+  width: 90%; /* Relative width */
   height: 80%; /* Relative height */
   /* padding: 1rem; */
   display: flex;
