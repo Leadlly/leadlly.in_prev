@@ -24,11 +24,7 @@ body {
 }
 
 .bg-gradient {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 179, 92, 0.12) 5.56%,
-    rgba(92, 31, 217, 0.12) 94.2%
-  );
+  background: #fff;
 }
 .gradient-text {
   background: linear-gradient(
@@ -40,32 +36,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  font-size: 130px;
+  font-size: 100px;
   font-family: Urbanist;
 
   font-weight: 800;
   text-align: center;
-}
-@media (min-width: 768px) {
-  .gradient-text {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  .gradient-text {
-    font-size: 7rem !important;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1535px) {
-  .gradient-text {
-    font-size: 92px !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-  .gradient-text {
-    font-size: 3rem !important;
-  }
 }
 @media (min-width: 1024px) and (max-width: 1360px) {
   .heading {
@@ -74,14 +49,61 @@ body {
   .card-container {
     padding: 0.5rem;
     width: 50% !important;
-    height: 40vh !important;
+    height: 45vh !important;
+    margin-left: 4rem !important;
+  }
+  .hero-text{
+    font-size: 40px !important;
+  }
+  .gradient-text {
+    font-size: 70px !important;
+  }
+  .upper{
+    margin-top: 8rem !important;
+  }
+  .span {
+    font-size: 3rem;
+  }
+  .hero-button {
+    padding: 0.2rem;
+    width: 35vw;
+    font-size: 2rem !important;
+  }
+  .mentor {
+    width: 100% !important;
+  }
+  .student {
+    width: 100% !important;
+  }
+  .pencil{
+    display: none;
+  }
+  .arrow{
+    display: none;
+  }
+  .left{
+    display: none;
+  }
+  .right{
+    display: none;
+  }
+  .book{
+    display: none;
+  }
+  .star{
+    display: none;
+  }
+  .para {
+    font-size: 8cap;
+    font-weight: 400;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .heading {
     font-size: 3rem !important;
   }
-  .contact-button{
+  .contact-button {
     width: 40vw !important;
     font-size: 0.9rem !important;
   }
@@ -89,21 +111,95 @@ body {
     padding: 0.5rem;
     width: 50% !important;
     height: 30vh !important;
-
   }
-
- .card{
+  .hero-text {
+    font-size: 2rem !important;
+  }
+  .span {
+    font-size: 2.5rem;
+  }
+  .gradient-text {
+    font-size: 45px;
+  }
+  .hero-button {
+    padding: 0.9rem;
+    width: 38vw;
+    font-size: 1.5rem !important;
+  }
+  .card {
     margin-left: 0rem !important;
   }
-  .contact{
+  .contact {
     margin-left: 0rem !important;
+  }
+
+  .middle {
+    margin-left: 5rem !important;
+  }
+  .upper {
+    margin-top: 8rem !important;
+  }
+  .arrow {
+    top: -4rem;
+    left: -3rem !important;
+  }
+  .star {
+    top: -1rem !important;
+    left: 50%;
+  }
+  .left {
+    right: 15rem !important;
+    top: -2rem;
+  }
+  .right {
+    left: 90% !important;
+    top: 25%;
+  }
+  .book {
+    right: -6rem;
+    top: 8rem;
+  }
+  .pencil {
+    left: -22rem !important;
+    top: 40%;
+  }
+  .hero-button {
+    padding: 0.9rem;
+    width: 40vw;
+    font-size: 1rem;
+  }
+  .para {
+    font-size: 6rem;
+    font-weight: 400;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+
+  .footer-section.links {
+    flex-basis: unset;
+    width: 100%;
+    max-width: unset;
+  }
+
+  .social-icons {
+    margin-top: 0.5rem;
   }
 }
+
 @media (min-width: 540px) and (max-width: 768px) {
   .heading {
     font-size: 3rem !important;
   }
-  .contact-button{
+  .upper {
+    margin-top: 1rem;
+  }
+  .contact-button {
     width: 40vw !important;
     font-size: 0.9rem !important;
     margin: 0 !important;
@@ -113,17 +209,30 @@ body {
     width: 50% !important;
     height: 45vh !important;
   }
-  .card{
+  
+  .span {
+    font-size: 2rem;
+  }
+  .gradient-text {
+    font-size: 50px;
+  }
+  .card {
     margin: 0 !important;
   }
-  .contact{
+  .contact {
     margin-left: 0 !important;
   }
-  .para{
-    font-size: 1.2rem;
+  .para {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  .pencil {
+    left: -24rem !important;
+    top: 16% !important;
   }
   
 }
+
 @media (min-width: 250px) and (max-width: 540px) {
   .heading {
     font-size: 3rem !important;
@@ -133,22 +242,85 @@ body {
     width: 90% !important;
     height: 45vh !important;
   }
-  .card{
+  .hero-button {
+    padding: 1rem;
+    width: 50vw;
+    font-size: 0.8rem !important;
+  }
+  .pencil{
+    display: none;
+  }
+  .arrow{
+    display: none;
+  }
+  .left{
+    display: none;
+  }
+  .right{
+    display: none;
+  }
+  .book{
+    display: none;
+  }
+  .star{
+    display: none;
+  }
+  .upper {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .card {
     margin: 0 !important;
   }
-  .contact{
+  .para-text{
+    font-size: 12px;
+  }
+  .hero-button {
+    padding: 5px;
+  }
+  .mid {
+    margin-top: 0px;
+  }
+  .span {
+    font-size: 2rem;
+  }
+  .hero-text {
+    font-size: 2rem !important;
+  }
+  .gradient-text {
+    font-size: 40px;
+  }
+  .contact {
     margin-left: 0 !important;
   }
-.contact-button{
-  margin: 0 !important;
-  width: 80vw !important;
-  font-size: 1rem !important;
+  .contact-button {
+    margin: 0 !important;
+    width: 80vw !important;
+    font-size: 1rem !important;
+  }
+  .para {
+    font-size: 2rem;
+    font-weight: 400;
+  }
 }
-.para{
-  font-size: 1rem;
+.mentor {
+  width: 70%;
+  max-width: 100%;
 }
+.hero-text {
+  font-size: 5rem;
 }
-
+.solution {
+  width: 60%;
+  max-width: 80%;
+}
+.student {
+  width: 100%;
+}
+.problem {
+  width: 60%;
+  max-width: 80%;
+}
 .text-gradient {
   background: linear-gradient(
     89.91deg,
@@ -179,7 +351,6 @@ body {
   justify-content: space-between;
   border-radius: 20px;
   width: 80%;
-  
 }
 
 .contact-us-card {
@@ -244,30 +415,29 @@ body {
   border-radius: 20px;
 }
 .contact-button {
-  background-color: #ffb35c; /* Orange color */
+  background-color: #ffb35c; 
   color: white;
   border: none;
   border-radius: 50px;
-  padding: 1rem 3rem; /* Adjusted padding */
-  font-size: 2rem; /* Relative font size */
+  padding: 1rem 3rem; 
+  font-size: 2rem; 
   font-weight: 500;
-  line-height: 1; /* Adjusted line height */
+  line-height: 1; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 1rem;
-  width: 30vw; 
+  width: 30vw;
   align-items: center;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Media Query for smaller screens */
 @media (max-width: 768px) {
   .contact-button {
-    font-size: 4vw; /* Adjusted font size for smaller screens */
-    padding: 1rem 2rem; /* Adjusted padding */
-    width: 80vw; /* Adjusted width for smaller screens */
+    font-size: 4vw; 
+    padding: 1rem 2rem; 
+    width: 80vw; 
   }
 }
 
@@ -278,19 +448,17 @@ body {
   justify-content: center;
   background-color: #eee4fb;
   border-radius: 20px;
-  width: 30%; 
-  height: 40vh; /* You can keep this if you want a default height */
-  max-width: 90%; /* Limiting maximum width to 90% of the container */
-  max-height: 80vh; /* Limiting maximum height to 80% of the viewport height */
-  
+  width: 30%;
+  height: 40vh; 
+  max-width: 90%; 
+  max-height: 80vh; 
 }
 
 .card-content {
   background-color: #fff;
   border-radius: 20px;
-  width: 90%; /* Relative width */
-  height: 80%; /* Relative height */
-  /* padding: 1rem; */
+  width: 90%;
+  height: 80%; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,13 +473,12 @@ body {
   margin-bottom: 20px;
 }
 
-
 .footer {
   background-color: #eee4fb;
   padding: 40px 20px;
   border-radius: 30px;
-  max-width: 80%;
-  width: 70%;
+  max-width: 100vw;
+  width: 80vw;
   margin: 20px auto;
   color: #000000;
 }
@@ -373,14 +540,13 @@ body {
   font-weight: 400;
 }
 
-
 .footer-bottom {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: start;
   margin-top: 20px;
-  border-top: 2px solid #FEFBFF;
+  border-top: 2px solid #fefbff;
   padding-top: 10px;
   font-weight: 400;
   line-height: 24px;

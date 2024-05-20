@@ -42,8 +42,8 @@ export const Contact = () => {
             </button>
           </div>
           <div className="contact mt-[1rem] ml-[4.5rem]">
-            <button className="contact-button text-white  flex items-center ">
-              CONTACT US
+            <button className="contact-button text-white  flex items-center "> <a href="https://forms.gle/rGuHFN2JwULDVVGAA">CONTACT US</a>
+              
               <Image src={vector} alt="vector" className="ml-2" />
             </button>
           </div>
