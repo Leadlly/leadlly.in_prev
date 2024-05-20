@@ -311,15 +311,15 @@ body {
   font-size: 5rem;
 }
 .solution {
-  width: 60%;
-  max-width: 80%;
+  width: 100%;
+  /* max-width: 100%; */
 }
 .student {
   width: 100%;
 }
 .problem {
-  width: 60%;
-  max-width: 80%;
+  width: 100%;
+  /* max-width: 100%; */
 }
 .text-gradient {
   background: linear-gradient(
