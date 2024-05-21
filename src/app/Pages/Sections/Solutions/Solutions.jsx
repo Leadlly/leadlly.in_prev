@@ -39,11 +39,11 @@ const Solutions = () => {
           <Image
             src={solution}
             alt="solution"
-            className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4"
+            className="solution"
           />
         </div>
         <div className="text-center w-full mt-8">
-          <button className="bg-[#FFB35C] text-center font-normal flex items-center gap-2 text-[16px] sm:text-[20px] md:text-[24px] lg:text-[26px] shadow-md hover:shadow-none py-2 px-8 rounded-full text-white mx-auto">
+          <button className="solution-button bg-[#FFB35C] text-center font-normal flex items-center gap-2 text-[16px] sm:text-[20px] md:text-[24px] lg:text-[26px] shadow-md hover:shadow-none py-2 px-8 rounded-full text-white mx-auto">
             Know More
             <Image src={vector} alt="vector" />
           </button>

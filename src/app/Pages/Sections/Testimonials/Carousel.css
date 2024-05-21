@@ -216,20 +216,20 @@
 
 @media (min-width: 540px) and (max-width: 768px) {
   .carousel-button {
-    top: 85%;
+    top: 105%;
     font-size: 1rem;
   }
 
   .button1 {
-    left: 0.2rem;
+    margin-left: 2rem;
   }
 
   .button2 {
-    right: 0.2rem;
+    margin-right: 2rem;
   }
 
   .carousel {
-    width: 100%;
+    width: 50%;
   }
 
   .carousel-item {

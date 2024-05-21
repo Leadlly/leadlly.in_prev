@@ -34,11 +34,11 @@ export default function BouncyCardsFeatures() {
             </span>
           </Heading>
         </div>
-        <div className="flex justify-center items-center h-full w-full mt-4 md:mt-8">
+        <div className="flex justify-center items-center h-full  ml-4 mr-4 mt-4 md:mt-8">
           <Image
             src={problems}
             alt="problem"
-            className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4"
+            className="problem "
           />
         </div>
       </section>
