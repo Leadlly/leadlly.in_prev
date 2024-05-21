@@ -26,15 +26,15 @@ const Home = () => {
 
        
        <div className="lg:flex justify-between gap-10 md:ml-[84px] md:w-[90vw] md:mb-[0vh] h-auto">
-          <div className="lg:flex lg:items-center ml-[8%] lg:justify-center z-0 relative lg:block hidden 2xl:w-[600px]">
+          <div className="lg:flex lg:items-center xl:hidden ml-[8%] lg:justify-center z-0 relative lg:block hidden">
             <div><Image src={gridleft}/></div>
             <div><Image className="relative left-[-16%]" src={gridleft}/></div>
             <div><Image className="left-[-32%] relative" src={gridleft}/></div>
           </div>
-          <div className="ml-[8%] fit-content z-0 relative md:hidden block 2xl:w-[600px]">
+          <div className="ml-[30%] fit-content z-0 relative md:hidden block">
             <div><Image className="absolute" src={gridleft}/></div>
           </div>
-      <div className="fkexbixs items-center md:relative lg:absolute sm:relative sm:left[-20%] md:left-[-5%] lg:top-[10%] lg:left-[20%]">
+      <div className="fkexbixs items-center md:relative lg:absolute xl:relative sm:relative sm:left[-20%] md:left-[-5%] lg:top-[10%] xl:my-[50px] lg:left-[20%] xl:left-[15%]">
       <div className="flex flex-col z-10 lg:relative gap-5 justify-center"> 
           <div className="relative">
           <div className="icons-container absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center pointer-events-none"> {/* Container for icons */}
@@ -64,7 +64,7 @@ const Home = () => {
         </div>
         </section>
 
-        <section className="mt-[25px]">
+        <section className="mt-[25px] overflow-hidden">
           <div>
             <h1 className="text-center text-[18px] text-[#6200EE] md:text-[25px] lg:text-[40px] md:font-semibold ">List of the Topics</h1>
             <p className="text-center mb-[5px] text-[#AD77FC] lg:text-[24px] md:text-[16px] text-[14px] font-normal">This Workshop is a 6 session program for 1 month</p>
@@ -126,7 +126,7 @@ const Home = () => {
            <div className='gradient-border lg:block hidden'></div>
         </section>
 
-        <section className="mt-[30px]">
+        <section className="mt-[30px] overflow-hidden">
           <h1 className="text-center lg:text-[40px] md:text-[30px] text-[24px] font-semibold">Why you should choose<span className="text-[#FFB35C]"> us :</span></h1>
           <p className="text-[#6200EE] lg:text-[20px] md:text-[16px] text-[14px] text-center">Over 1,000 Students Trusted this Future oriented course</p>
           <div className='gradient-border lg:hidden'></div>
@@ -149,7 +149,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="flex justify-center items-center">
+        <section className="flex justify-center overflow-hidden items-center">
           <div className="bg-[#D6C4F0] p-[15px] w-[400px] rounded-[20px] md:hidden mt-[20px] flex-col items-center">
           <div  className="flex justify-betweenitems-start gap-[27px]">
                 <Image width={40} height={40} src={star}/>
@@ -168,7 +168,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="mt-[10px] bg-[#C495C8] md:text-black text-white">
+        <section className="mt-[10px] overflow-hidden bg-[#C495C8] md:text-black text-white">
           <p className="text-center lg:text-[32px] md:text-[26px] text-[18px] font-normal py-[10px]">Hear it From our Learns !!</p>
         </section>
     </>
