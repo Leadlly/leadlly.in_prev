@@ -15,8 +15,8 @@ import vector from "../../../../app/assets/Vector.png";
 const Hero = () => {
   return (
     <>
-      <section className="overflow-hidden bg-gradient flex flex-col">
-        {/* Desktop and Tablet Section */}
+      <section className="overflow-hidden  bg-gradient flex flex-col" >
+        
         <div className="hidden md:flex flex-col md:flex-row justify-between mt-[10rem] mb-[12rem] gap-5 px-8 md:px-20 h-auto">
           <div className="2xl:w-[700px] mb-8 md:mb-0">
             <Image src={mentor} alt="mentor" />

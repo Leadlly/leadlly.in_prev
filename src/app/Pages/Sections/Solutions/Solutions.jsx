@@ -30,7 +30,7 @@ const Solutions = () => {
               Yes, we have
             </span>
             <br />
-            <span className="gradient-text">
+            <span className="gradient-text text-[7rem]">
               Solution!
             </span>
           </Heading>

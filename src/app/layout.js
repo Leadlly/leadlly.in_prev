@@ -7,7 +7,7 @@ import Footer from '@/Components/Footer/Footer';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Leadlly.in",
+  title: "Leadlly",
   description: "Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals.",
 };
 

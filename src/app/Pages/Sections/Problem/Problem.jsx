@@ -29,7 +29,7 @@ export default function BouncyCardsFeatures() {
               Do you have
             </span>
             <br />
-            <span className="gradient-text">
+            <span className="gradient-text text-[7rem]">
               Problems?
             </span>
           </Heading>
