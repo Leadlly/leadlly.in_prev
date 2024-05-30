@@ -370,7 +370,7 @@ body {
 
 
 
-.about_p{
+.about_p {
   border-radius: 20px;
   border: 1.5px solid #5a10d960;
   width: 100%;
@@ -381,7 +381,8 @@ body {
   font-weight: 400;
   line-height: 2.5rem;
 }
-.top_image{
+
+.top_image {
   height: 80%;
 }
 
@@ -389,8 +390,6 @@ body {
   display: flex;
   align-items: center;
 }
-
-/* src/FeaturesLayout.css */
 
 .features-grid {
   display: grid;
@@ -408,7 +407,6 @@ body {
   border-radius: 40px;
   box-shadow: 0px 0px 2.44px 0.45px #5a10d985;
   text-align: center;
-  
 }
 
 .feature-item h2 {
@@ -417,7 +415,6 @@ body {
   text-align: start;
   color: #000000;
   padding: 20px 0px 0px 20px;
-
 }
 
 .feature-item p {
@@ -433,6 +430,7 @@ body {
   height: auto;
   border-radius: 40px;
 }
+
 .planner {
   display: flex;
   flex-direction: row;
@@ -440,134 +438,165 @@ body {
   align-items: center;
 }
 
-
-.planner-images   {
+.planner-images {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
 
-
-.planner1  {
+.planner1 {
   width: 50%;
   height: auto;
   margin-bottom: 9rem;
 }
+
 .growth1 {
   width: 50%;
   height: auto;
 }
-.plan  {
+
+.plan {
   width: 9rem;
   margin-top: 10rem;
   text-align: start;
   margin-left: 1rem;
 }
 
-.plan p{
+.plan p {
   width: 18rem;
 }
+
 .planner2 {
   width: 50%;
   height: auto;
   border-radius: 10px;
 }
 
-.quizzes h2{
+.quizzes h2 {
   margin-top: 2.5rem;
   font-size: 1.4rem;
 }
-.quizzes p{
+
+.quizzes p {
   font-size: 0.7rem;
 }
-.error-book h2{
+
+.error-book h2 {
   font-size: 1.4rem;
   margin: 0;
 }
-.error-book p{
-  font-size: 0.7rem;
-}
-.more-coming h2{
-margin-top: 2rem;
 
-}
-.more-coming  h2{
-margin-top: 3rem;
-font-size: 1.4rem;
-}
-.more-coming  p{
+.error-book p {
   font-size: 0.7rem;
 }
-.study-room h2{
+
+.more-coming h2 {
+  margin-top: 2rem;
+}
+
+.more-coming h2 {
+  margin-top: 3rem;
   font-size: 1.4rem;
 }
-.study-room p{
+
+.more-coming p {
   font-size: 0.7rem;
 }
-.library h2{
+
+.study-room h2 {
+  font-size: 1.4rem;
+}
+
+.study-room p {
+  font-size: 0.7rem;
+}
+
+.library h2 {
   margin-top: 5rem;
 }
-.growth-meter{
+
+.growth-meter {
   display: flex;
   flex-direction: row;
 }
+
 .growth-meter-images {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
 }
+
 .growth {
   margin-top: 5rem;
   text-align: start;
   margin-left: 2rem;
 }
 
-.growth1{
+.growth1 {
   width: 100%;
   height: auto;
 }
-.growth2{
+
+.growth2 {
   width: 100%;
   height: auto;
 }
-.workshop-images   {
+
+.workshop-images {
   width: 100vw;
 }
 
-.workshop-text{
+.workshop-text {
   margin-top: 4rem;
   text-align: start;
   margin-left: 2rem;
 }
-.workshop-text p{
+
+.workshop-text p {
   width: 19rem;
 }
-.workshop1{
+
+.workshop1 {
   width: 100vw;
   height: auto;
   margin-left: auto;
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .features-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
   }
-  
-  .planner .growth-meter {
+
+  .planner, .growth-meter {
     flex-direction: column;
   }
 
-  .planner-images .growth-meter-images {
+  .planner-images, .growth-meter-images {
     flex-direction: row;
     justify-content: center;
   }
 
-  .planner1 .growth1 {
-    width: 45%;
+  .planner1, .growth1 {
+    width: 100%;
+  }
+
+  .plan {
+    margin-top: 5rem;
+  }
+
+  .plan p {
+    width: 100%;
+  }
+
+  .planner2 {
+    width: 100%;
   }
 }
+
 .dashboard {
   grid-column: span 1/2;
   grid-row: span 2;
@@ -598,7 +627,7 @@ font-size: 1.4rem;
   grid-row: span 1;
 }
 
-.team{
+.team {
   width: 60%;
   border-radius: 40px;
   background-color: #cfb0fa54;

@@ -24,7 +24,7 @@ export const Contact = () => {
         >
           <span className="para sm:text-1xl md:text-2xl lg:text-3xl">Want to know more?</span>
           <br />
-          <span className="heading text-[7rem] gradient-text">Contact Us</span>
+          <span className="heading gradient-text">Contact Us</span>
         </Heading>
       </div>
       <div className="flex flex-col md:flex-row items-center mr-[2rem] justify-evenly w-full px-4 md:px-20 py-10 rounded-xl">
