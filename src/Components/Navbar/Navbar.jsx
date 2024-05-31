@@ -89,7 +89,7 @@ export default function Navbar() {
                     <Link href="/About">Reviews</Link>
                   </Button> */}
                   <Button variant="none" className="text-3xl font-sans ">
-                    <Link href="/About">Courses</Link>
+                    <Link href="/Courses">Courses</Link>
                   </Button>
 
                   {/* <Button variant="none" className="text-3xl font-sans">
@@ -128,8 +128,7 @@ export default function Navbar() {
                   </Link>
                 </DropdownItem> */}
                 <DropdownItem onClick={isOpen ? onClose : onOpen}>
-                  <Link href="/Courses">
-                  <Link href="/About">Courses</Link>
+                  <Link href="/Courses">Courses
                   </Link>
                 </DropdownItem>
                 {/* <DropdownItem onClick={isOpen ? onClose : onOpen}>
