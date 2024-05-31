@@ -9,7 +9,7 @@ import grid from "../imgs/gridwhole.png"
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+const metadata = {
   title: "Leadlly",
   description: "Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals.",
 };

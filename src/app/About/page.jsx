@@ -8,7 +8,7 @@ import { Different } from './Different';
 export default function About() {
   return (
 <>
-<div style={{ backgroundImage: "url('grid.png')", width: "100%", zIndex: "-1"}}>
+
     <section>
 
    
@@ -96,7 +96,6 @@ export default function About() {
           <p>Our group of passionate educators, technologists, and supporters of student achievement believes education can significantly impact people's lives, working tirelessly to help students reach their full potential.</p>
         </div>
         </section>
-        </div>
 </>
   )
 }
