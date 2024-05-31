@@ -1,5 +1,8 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react'
+import Image from 'next/image'
+import { Heading } from '@chakra-ui/react'
+import { Typewriter } from 'typewriter-effect'
 export default function Courses() {
   return (
     <div className='h-[100vh]  flex bg-gradient-to-r bg-clip-text from-purple-700 via-indigo-300 to-blue-700 justify-center'>
