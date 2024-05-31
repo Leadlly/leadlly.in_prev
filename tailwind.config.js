@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import grid from "../leadlly.in/src/imgs/gridwhole"
 const { nextui } = require("@nextui-org/react");
 
 module.exports = {

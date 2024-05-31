@@ -2,13 +2,16 @@ import { Heading } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
 import vector from "../../../assets/Vector.png";
+import qrcode from "../../../../imgs/qrcode.png"
 
 export const Contact = () => {
   return (
-    <section className="overflow-hidden bg-gradient flex flex-col items-center py-10">
-    <div className="rounded-xl bg-gradient-to-r mt-[3rem] bg-clip-text from-purple-600 to-[#5900d9] font-sans mt-20 font-bold">
+    <section className="overflow-hidden bg-gradient relative flex flex-col items-center py-10">
+    <div className="rounded-xl mb-[30px] bg-gradient-to-r  bg-clip-text from-purple-600 to-[#5900d9] font-sans font-bold">
        <Heading
-          className="text-center font-normal font-Urbanist"
+          className="text-center"
+          fontWeight="normal"
+          fontFamily="Urbanist"
           opacity={1}
           zIndex={10}
           color={"transparent"}
@@ -22,39 +25,73 @@ export const Contact = () => {
             xl: "4rem",
           }}
         >
-          <span className="para sm:text-1xl md:text-2xl lg:text-3xl">Want to know more?</span>
+          <span className="para text-[2rem] lg:text-[35px]">Want to know more?</span>
           <br />
-          <span className="heading gradient-text">Contact Us</span>
+          <span className="gradient-text text-[3rem] md:text-[80px] lg:text-[100px]">Contact Us</span>
         </Heading>
       </div>
-      <div className="flex flex-col md:flex-row items-center mr-[2rem] justify-evenly w-full px-4 md:px-20 py-10 rounded-xl">
-        <div className="flex flex-col items-start justify-between w-full md:w-2/3 lg:w-1/2 p-5">
-          <div className=" card bg-[#eee4fb] rounded-2xl p-6 max-w-xl ml-[4.5rem] w-full h-40vh flex flex-col items-start">
-            <h2 className="text-2xl font-bold pb-4">Contact Us</h2>
-            <div className="w-1/2 h-1 bg-[#8000ff] mb-4"></div>
-            <p className="text-gray-700 text-start mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Integer
-              semper, lacus ac dignissim efficitur, ante orci varius turpis, non
-              accumsan urna lorem vitae velit.
-            </p>
-            <button className="integer-button border-2 text-black rounded-lg">
-              Integer
-            </button>
+
+      <div className="border-purple-400 border-2 md:mx-0 mx-[15px] shadow-md px-[35px] py-[30px] md:py-[42px] bg-[#CFB0FA] rounded-xl">
+        <div className="md:flex md:items-center md:gap-4">
+          <div className="lg:w-[544px] md:w-[60%]">
+          <form action="#" method="post">
+          <div className="mb-[12px]">
+            <input
+              className="shadow-md border-[#CFB0FA] rounded-[15px] w-full py-[14px] px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
+              id="name"
+              type="text"
+              placeholder="Name*"
+              required
+            />
           </div>
-          <div className="contact mt-[1rem] ml-[4.5rem]">
-            <button className="contact-button text-white  flex items-center "> <a href="https://forms.gle/rGuHFN2JwULDVVGAA">CONTACT US</a>
-              
-              <Image src={vector} alt="vector" className="ml-2" />
-            </button>
+          <div className="mb-4">
+            
+            <input
+              className="shadow-md border-[#CFB0FA] rounded-[15px] border  w-full py-[14px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
+              type="email"
+              placeholder="Your Email"
+              required
+            />
           </div>
-        </div>
-        <div className="card-container">
-          <div className="horizontal-bar"></div>
-          <div className=" card-content">
-         
+          <div className="mb-4">
+            
+            <input
+              className="shadow-md border-[#CFB0FA] rounded-[15px] border  w-full py-2 md:py-[14px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="phone"
+              type="tel"
+              placeholder="Your Phone Number"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            
+            <textarea
+              className="shadow-md appearance-none border border-[#CFB0FA] rounded-[15px] w-full py-[14px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="message"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+        </form>
+          </div>
+          <div className="underline hidden md:block mx-[2%] md:rotate-0 rotate-90"></div>
+          <div>
+            <Image
+            src={qrcode}
+            alt="qrcode"/>
           </div>
         </div>
       </div>
+
+      <div className="mt-[2rem] flex justify-end items-end">
+              <button className="text-center bg-[#FFB35C] font-normal flex items-center gap-[10px] text-[16px] lg:text-[22px] shadow-md hover:shadow-none py-[0.8rem] px-[40px] rounded-[50px] text-white mx-auto">
+               Send us
+                <Image src={vector} className="lg:w-[25px] w-[18px]" alt="vector" />
+              </button>
+          </div>
+
     </section>
   );
 };

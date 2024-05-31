@@ -15,52 +15,53 @@ import vector from "../../../../app/assets/Vector.png";
 const Hero = () => {
   return (
     <>
-      <section className="overflow-hidden bg-gradient flex flex-col">
+      <section className="overflow-hidden bg-gradient relative flex flex-col">
         {/* Desktop and Tablet Section */}
-        <div className="hidden md:flex flex-col md:flex-row justify-between mt-[10rem] mb-[12rem] gap-5 px-8 md:px-20 h-auto">
-          <div className="2xl:w-[700px] mb-8 md:mb-0">
+        <div className="hidden md:flex flex-col md:flex-row justify-between mt-[7%] md:mb-[10%] lg:mb-[10%] lg:gap-5 px-8 lg:px-20 h-auto">
+          <div className="2xl:w-[700px] lg:w-[60%] mb-8 md:mb-0">
             <Image src={mentor} alt="mentor" />
           </div>
-
-          <div className="middle flex flex-col md:ml-8 justify-center w-full md:w-auto">
-            <Box className="relative">
+          
+          <div className="">
+          <div className="middle flex flex-col md:ml-8 w-full md:w-auto">
+            <Box className="relative lg:block flex flex-col justify-center items-center md:text-center">
             <div className="icons-container absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center pointer-events-none">
                 <Image
                   src={arrow}
                   alt="arrow"
-                  className="absolute lg:w-[60.86px] h-[58.52px] top-[-4rem]  left-[2rem]  sm:left-[-5%] md:w-8 lg:left-0 md:left-[-10%] "
+                  className="absolute lg:w-[60.86px] lg:h-[58.52px] top-[-10%] lg:top-[-4rem] md:w-10 md:h-[38px] left-[8%]  lg:left-[14%]"
                 />
                 <Image
                   src={Star}
                   alt="star"
-                  className="absolute lg:w-[31.56px] md:w-10 h-[28px] top-[4%] md:top-[-1rem] left-[60%] md:left-[40%] sm:left-[50%]"
+                  className="absolute lg:w-[31.56px] md:w-7 h-[28px] top-[3%] lg:left-[95%] left-[90%]"
                 />
                 <Image
                   alt="lineright"
                   src={left}
-                  className="relative lg:w-[95.56px] h-[49.33px] top-[2rem] md:w-10  md:right-[26rem] sm:right-[8rem] "
+                  className="relative lg:w-[20%] lg:top-[0%] top-[18%] md:w-16 left-[-55%] lg:left-[-63%]"
                 />
                 <Image
                   alt="lineleft"
                   src={right}
-                  className="absolute lg:w-[95.56px] h-[49.33px] top-[0rem] md:w-8 lg:left-[110%] md:left-[95%] sm:left-[-10%]  sm:top-[2rem]"
+                  className="absolute lg:w-[95.56px] top-[30%] left-[95%] md:w-14 lg:left-[105%]"
                 />
                 <Image
                   alt="pencil"
                   src={Pencil}
-                  className="absolute lg:w-[45.56px] top-[25rem] md:w-6 lg:left-[-40rem] md:left-[-55%] md:top-[24rem]  sm:right-[-3rem]"
+                  className="absolute lg:w-[45.56px] lg:bottom-[-10%] md:bottom-[-50%] md:left-[-95%] lg:left-[-90%] md:w-6"
                 />
                 <Image
                   alt="book"
                   src={Book}
-                  className="absolute lg:w-[95.56px] h-[49.33px] top-[12rem] md:right-[-22rem] md:w-8 sm:right-[-6rem]"
+                  className="absolute lg:w-[46.56px] lg:block hidden lg:top-[105%] lg:right-[-54%] md:w-8"
                 />
               </div>
 
 
-              <div className="full rounded-xl gap-10 bg-gradient-to-r bg-clip-text from-purple-600 to-[#5900d9] font-sans font-bold">
+              <div className="full w-[300px] md:text-center lg:w-[478px] rounded-xl gap-10 bg-gradient-to-r bg-clip-text from-purple-600 to-[#5900d9] font-sans font-bold">
                 <Heading
-                  className="text-start"
+                  className="lg:text-start"
                   fontWeight="normal"
                   fontFamily="Urbanist"
                   opacity={1}
@@ -71,16 +72,16 @@ const Hero = () => {
                   fontSize={{
                     base: "1.5rem",
                     sm: "2rem",
-                    md: "1.5rem",
-                    lg: "3.2rem",
-                    xl: "4rem",
-                    "2xl": "3rem",
+                    md: "1.8rem",
+                    lg: "2.7rem",
+                    xl: "3.4rem",
+                    "2xl": "4rem",
                   }}
                 >
-                  <span>Get your own</span>
+                  <span className="md:text-center lg:text-left">Get your own</span>
                   <br />
-                  <span className="gradient-text ">
-                    <Typewriter
+                  <span className="gradient-text xl:text-[80px] md:text-center lg:text-left lg:text-[75px] md:text-[48px]">
+                    <Typewriter 
                       options={{
                         strings: ["Bade Bhaiya", "Badi Didi"],
                         autoStart: true,
@@ -90,23 +91,23 @@ const Hero = () => {
                     />
                   </span>
                   <br />
-                  <span>to hold your Hand</span>
+                  <span className="max-w-[70%] md:text-center lg:text-left">to hold your Hand</span>
                 </Heading>
-              </div>
-            </Box>
-            <h4 className="text-[1.2rem] mt-[1rem] md:text-[1rem] leading-tight text-black mr-2.5 font-sans font-semibold">
+                <h4 className="lg:text-[1.2rem] md:text-[14px] md:font-medium md:text-center lg:text-left mt-[1rem]  leading-tight text-black mr-2.5 font-sans font-semibold">
               Say goodbye to one-size-fits-all! We tailor study plans and resources to your individual learning style and goals.
             </h4>
-
-            <div className="mt-[2rem] ml-[2rem]">
-              <button className="hero-button bg-[#FFB35C] text-center font-normal flex items-center gap-[10px] text-[26px] shadow-md hover:shadow-none py-[0.8rem] px-[3rem] rounded-[50px] text-white mx-auto">
-                Schedule a meeting
-                <Image src={vector} alt="vector" />
+              </div>
+            </Box>
+            <div className="mt-[2rem] flex justify-end items-end">
+              <button className="text-center bg-[#FFB35C] font-normal flex items-center gap-[10px] text-[16px] lg:text-[22px] shadow-md hover:shadow-none py-[0.8rem] px-[40px] rounded-[50px] text-white mx-auto">
+               Contact us
+                <Image src={vector} className="lg:w-[25px] w-[18px]" alt="vector" />
               </button>
+          </div>
             </div>
           </div>
 
-          <div className="2xl:w-[500px] h-auto">
+          <div className="2xl:w-[500px] lg:w-[60%] h-auto">
             <Image src={student} alt="student" />
           </div>
         </div>

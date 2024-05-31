@@ -1,14 +1,15 @@
 import { Heading } from "@chakra-ui/react";
 import React from "react";
 import Carousel from "./Carousel";
+import vector from "../../../assets/Vector.png";
 // import vector from "../../../assets/Vector.png";
-// import Image from "next/image";
+import Image from "next/image";
 
 const ComponentName = () => {
   return (
     <>
-      <section className="overflow-hidden bg-gradient flex flex-col items-center py-8">
-        <div className="full rounded-xl bg-gradient-to-r bg-clip-text from-purple-600 to-[#5900d9] font-sans font-bold mb-8 mt-12">
+      <section className="overflow-hidden bg-gradient relative flex flex-col items-center py-8">
+        <div className="full rounded-xl bg-gradient-to-r bg-clip-text from-purple-600 to-[#5900d9] font-sans font-bold mt-12">
           <Heading
             className="text-center"
             fontWeight="normal"
@@ -44,6 +45,7 @@ const ComponentName = () => {
             <Image src={vector} alt="vector" />
           </button>
         </div> */}
+        
       </section>
     </>
   );

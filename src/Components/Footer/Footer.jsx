@@ -5,7 +5,7 @@ import logo from "../.././app/assets/logo.png";
 export default function Footer() {
   return (
     <>
-      <section className="overflow-hidden bg-gradient flex flex-col items-center">
+      <section className="overflow-hidden bg-gradient relative flex flex-col items-center">
         <div className="full rounded-xl font-sans font-bold ">
          
       <footer className="footer">
