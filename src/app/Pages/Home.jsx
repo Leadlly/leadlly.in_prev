@@ -6,9 +6,10 @@ import Testimonial from './Sections/Testimonials/Testimonial.jsx';
 import  {Contact}  from './Sections/Contact/Contact';
 
 
+
 export default function Main() {
   return (
-  <div >
+  <div style={{ backgroundImage: "url('grid.png')", width: "100%", zIndex: "-1" }}>
     <div className='overflow-clip'>
       <Hero/>
       <Problem/>

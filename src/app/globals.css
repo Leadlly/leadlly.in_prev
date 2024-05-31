@@ -17,10 +17,6 @@ body {
   font-optical-sizing: auto;
   width: 100%;
   height: 100%;
-  background-image: url('/gridwhole.png');
-  background-size: cover; /* Adjust as necessary */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 *,
 ::before,
@@ -28,12 +24,6 @@ body {
   border-width: 0;
 }
 /* globals.css */
-.background-image {
-  background-image: url('../imgs/gridwhole.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 
 .gradient-text {
   background: linear-gradient(
@@ -47,7 +37,7 @@ body {
   display: inline-block;
   /* font-size: 90px; */
   font-family: Urbanist;
-  
+
   font-weight: 800;
   text-align: center;
 }
@@ -152,6 +142,9 @@ body {
 }
 .problem{
   width: 50vw;
+}
+.mission{
+  width: 60vw;
 }
 .contact-us-container {
   display: flex;
@@ -295,7 +288,7 @@ body {
   padding: 40px 20px;
   border-radius: 30px;
   max-width: 100vw;
-  width: 80vw;
+  width: 70vw;
   margin: 20px auto;
   color: #000000;
 }
@@ -372,4 +365,272 @@ body {
 }
 .footer-bottom p {
   margin-left: 12px;
+}
+
+
+
+.about_p {
+  border-radius: 20px;
+  border: 1.5px solid #5a10d960;
+  width: 100%;
+  margin-left: 1rem;
+  margin-bottom: 15rem;
+  background-color: #F9F5FF;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.top_image {
+  height: 80%;
+}
+
+.about-left {
+  display: flex;
+  align-items: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  background-color: #cfb0fa9d;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  box-shadow: 0px 0px 2.44px 0.45px #5a10d985;
+  text-align: center;
+}
+
+.feature-item h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: start;
+  color: #000000;
+  padding: 20px 0px 0px 20px;
+}
+
+.feature-item p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  text-align: start;
+  color: #000000;
+  padding: 0px 0px 0px 20px;
+}
+
+.feature-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+.planner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.planner-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.planner1 {
+  width: 50%;
+  height: auto;
+  margin-bottom: 9rem;
+}
+
+.growth1 {
+  width: 50%;
+  height: auto;
+}
+
+.plan {
+  width: 9rem;
+  margin-top: 10rem;
+  text-align: start;
+  margin-left: 1rem;
+}
+
+.plan p {
+  width: 18rem;
+}
+
+.planner2 {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.quizzes h2 {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+}
+
+.quizzes p {
+  font-size: 0.7rem;
+}
+
+.error-book h2 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.error-book p {
+  font-size: 0.7rem;
+}
+
+.more-coming h2 {
+  margin-top: 2rem;
+}
+
+.more-coming h2 {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+
+.more-coming p {
+  font-size: 0.7rem;
+}
+
+.study-room h2 {
+  font-size: 1.4rem;
+}
+
+.study-room p {
+  font-size: 0.7rem;
+}
+
+.library h2 {
+  margin-top: 5rem;
+}
+
+.growth-meter {
+  display: flex;
+  flex-direction: row;
+}
+
+.growth-meter-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.growth {
+  margin-top: 5rem;
+  text-align: start;
+  margin-left: 2rem;
+}
+
+.growth1 {
+  width: 100%;
+  height: auto;
+}
+
+.growth2 {
+  width: 100%;
+  height: auto;
+}
+
+.workshop-images {
+  width: 100vw;
+}
+
+.workshop-text {
+  margin-top: 4rem;
+  text-align: start;
+  margin-left: 2rem;
+}
+
+.workshop-text p {
+  width: 19rem;
+}
+
+.workshop1 {
+  width: 100vw;
+  height: auto;
+  margin-left: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+  }
+
+  .planner, .growth-meter {
+    flex-direction: column;
+  }
+
+  .planner-images, .growth-meter-images {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .planner1, .growth1 {
+    width: 100%;
+  }
+
+  .plan {
+    margin-top: 5rem;
+  }
+
+  .plan p {
+    width: 100%;
+  }
+
+  .planner2 {
+    width: 100%;
+  }
+}
+
+.dashboard {
+  grid-column: span 1/2;
+  grid-row: span 2;
+}
+
+.planner {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.quizzes {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.error-book {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.growth-meter {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.library {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.team {
+  width: 60%;
+  border-radius: 40px;
+  background-color: #cfb0fa54;
+  text-align: start;
+  padding: 32px 36px 36px 36px;
+  border: 1.5px solid #CFB0FA;
 }
