@@ -33,7 +33,7 @@ export const Different = () => {
             How are we
           </span>
           <br />
-          <span className="gradient-text text-[7rem]">Diffferent?</span>
+          <span className="gradient-text">Diffferent?</span>
         </Heading>
       </div>
 

@@ -372,23 +372,32 @@ body {
 .about_p {
   border-radius: 20px;
   border: 1.5px solid #5a10d960;
-  width: 100%;
-  margin-left: 1rem;
-  margin-bottom: 15rem;
   background-color: #F9F5FF;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 2.5rem;
+  line-height: 2rem; 
 }
 
-.top_image {
-  height: 80%;
+@media (min-width: 640px) {
+  .about_p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+  .about-left {
+    margin-right: 1rem !important;
+  }
+}
+
+.top_image { 
+  max-height: 80vh;
+  max-width: 100%; 
 }
 
 .about-left {
   display: flex;
   align-items: center;
 }
+
 
 .features-grid {
   display: grid;
@@ -401,7 +410,7 @@ body {
 }
 
 .feature-item {
-  background-color: #cfb0fa9d;
+  background-color: #eee4fb;
   border: 1px solid #ddd;
   border-radius: 40px;
   box-shadow: 0px 0px 2.44px 0.45px #5a10d985;
@@ -429,6 +438,10 @@ body {
   height: auto;
   border-radius: 40px;
 }
+.growth1 {
+  width: 50%;
+  height: auto;
+}
 
 .planner {
   display: flex;
@@ -450,10 +463,6 @@ body {
   margin-bottom: 9rem;
 }
 
-.growth1 {
-  width: 50%;
-  height: auto;
-}
 
 .plan {
   width: 9rem;
@@ -544,7 +553,7 @@ body {
 }
 
 .workshop-images {
-  width: 100vw;
+  width: 100%;
 }
 
 .workshop-text {
@@ -558,43 +567,11 @@ body {
 }
 
 .workshop1 {
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin-left: auto;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, auto);
-  }
-
-  .planner, .growth-meter {
-    flex-direction: column;
-  }
-
-  .planner-images, .growth-meter-images {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .planner1, .growth1 {
-    width: 100%;
-  }
-
-  .plan {
-    margin-top: 5rem;
-  }
-
-  .plan p {
-    width: 100%;
-  }
-
-  .planner2 {
-    width: 100%;
-  }
-}
 
 .dashboard {
   grid-column: span 1/2;
@@ -633,4 +610,350 @@ body {
   text-align: start;
   padding: 32px 36px 36px 36px;
   border: 1.5px solid #CFB0FA;
+}
+
+@media  (min-width: 500px) and (max-width: 820px) {
+ .plan{
+  width: 7rem;
+  margin-top: 5rem;
+ }
+ .plan p {
+  width: 19rem;
+}
+.quizzes h2 {
+  margin-top: 1rem !important;
+  font-size: 1.5rem;
+}
+  .error-book h2{
+    margin-bottom: 0rem !important;
+    font-size: 1.5rem;
+  }
+  .library h2{
+    margin-top: 0 !important;
+  }
+  .library p{
+    font-size: 0.9rem !important;
+  }
+  .growth{
+    margin-top: 0 !important;
+    margin-left: 1rem;
+  }
+  .growth p{
+    font-size: 0.8rem;
+  }
+  .workshop-text{
+    margin-top: 0;
+  }
+  .workshop-text p {
+    width: 10rem;
+  }
+  .more-coming h2{
+    margin-top: 1rem;
+  }
+  .mission{
+    width: 80vw;
+  }
+}
+@media  (min-width: 820px) and (max-width: 1024px) {
+  .quizzes h2 {
+    margin-top: 0.8rem !important;
+    font-size: 1.5rem;
+  }
+  .workshop-text p {
+    width: 9rem;
+    font-size: 0.9rem;
+  }
+  .library h2{
+    margin-top: 2rem;
+  }
+  .mission{
+    width: 100vw;
+  }
+  .more-coming h2{
+    margin-top: 0rem;
+  }
+}
+@media  (max-width: 1024px){
+  .workshop-text p {
+    width: 13rem;
+    
+  }
+  .library h2{
+    margin-top: 1.9rem !important;
+  }
+}
+@media  (min-width: 500px) and (max-width: 820px){
+  .mission{
+    width: 90vw;
+  }
+    .about_p{
+      margin-right: 1rem !important;
+      font-size: 1rem;
+    }
+    .team {
+  width: 90%;
+    }
+    .feature-item h2{
+      font-size: 1rem !important;
+      margin-bottom: 4px;
+    }
+    .feature-item p  {
+      font-size: 0.9rem !important;
+    }
+    .plan{
+      width: 5rem;
+      margin-top: 2rem;
+      margin-left: 0rem !important;
+     }
+     .plan p {
+      width: 11rem;
+    }
+    .quizzes h2{
+      margin-top: 0.8rem !important;
+    font-size: 1.5rem;
+    }
+    .planner1{
+      margin-bottom: 11rem;
+    }
+    .quizzes p{
+      font-size: 0.5rem !important;
+    }
+    .error-book h2{
+      margin-bottom: 0rem;
+    }
+    .error-book p{
+      font-size: 0.5rem !important;
+    }
+    .growth{
+      margin-top: 2rem !important;
+      margin-left: 0rem;
+    }
+    .growth h2{
+      font-size: 1rem !important;
+      margin-bottom: 0px;
+    }
+    .growth p{
+      font-size: 0.6rem !important;
+      width: 10rem;
+    }
+    .library h2 {
+      margin-top: 3rem !important;
+      font-size: 1rem !important;
+    }
+    .library p{
+      font-size: 0.6rem !important;
+    }
+    .workshop-text{
+      margin-top: 0rem;
+      margin-left: 0rem !important;
+    }
+    .workshop-text h2{
+  
+      font-size: 1rem !important;
+    }
+    .workshop-text p{
+      width: 6rem;
+      font-size: 0.6rem !important;
+    }
+    .revision h2{
+      font-size: 0.8rem !important;
+    }
+    .revision p{
+      font-size: 0.5rem !important;
+    }
+    .more-coming h2{
+      margin-top: 0rem;
+      font-size: 1rem;
+    }
+    
+    .more-coming p{
+      font-size: 0.6rem !important;
+    }
+    .study-room p {
+      font-size: 0.6rem !important;
+  
+    }
+}
+@media  (min-width: 412px) and (max-width: 500px){
+.mission{
+  width: 90vw;
+}
+  .about_p{
+    margin-right: 1rem !important;
+    font-size: 1rem;
+  }
+  .team {
+width: 90%;
+  }
+  .feature-item h2{
+    font-size: 0.9rem !important;
+    margin-bottom: 4px;
+  }
+  .feature-item p  {
+    font-size: 0.7rem !important;
+  }
+  .plan{
+    width: 5rem;
+    margin-top: 0rem;
+    margin-left: 0rem !important;
+   }
+   .plan p {
+    width: 6rem;
+  }
+  .quizzes h2{
+    margin-top: 0rem;
+  }
+  .quizzes p{
+    font-size: 0.5rem !important;
+  }
+  .error-book h2{
+    margin-bottom: 0rem;
+  }
+  .error-book p{
+    font-size: 0.5rem !important;
+  }
+  .growth{
+    margin-top: 0 !important;
+    margin-left: 0rem;
+  }
+  .growth h2{
+    font-size: 0.7rem !important;
+    margin-bottom: 0px;
+  }
+  .growth p{
+    font-size: 0.5rem !important;
+    width: 6rem;
+  }
+  .library h2 {
+    margin-top: 1rem;
+    font-size: 0.7rem !important;
+  }
+  .library p{
+    font-size: 0.6rem !important;
+  }
+  .workshop-text{
+    margin-top: 0rem;
+    margin-left: 0rem !important;
+  }
+  .workshop-text h2{
+
+    font-size: 0.8rem !important;
+  }
+  .workshop-text p{
+    width: 7rem;
+    font-size: 0.5rem !important;
+  }
+  .revision h2{
+    font-size: 0.8rem !important;
+  }
+  .revision p{
+    font-size: 0.5rem !important;
+  }
+  .more-coming h2{
+    margin-top: 0rem;
+    font-size: 0.7rem;
+  }
+  
+  .more-coming p{
+    font-size: 0.7rem !important;
+  }
+  .study-room p {
+    font-size: 0.5rem !important;
+
+  }
+}
+@media   (min-width: 240px) and (max-width: 412px){
+  .mission{
+    width: 100vw;
+  }
+  .features-grid{
+    gap: 5px;
+  }
+  .about_p{
+    margin-right: 1rem !important;
+    font-size: 1rem;
+  }
+  .team {
+width: 90%;
+  }
+  .feature-item h2{
+    font-size: 0.7rem !important;
+    margin-bottom: 0px;
+  }
+  .feature-item p  {
+    font-size: 0.5rem !important;
+  }
+  .plan{
+    width: 6rem;
+    margin-top: 0rem;
+    margin-left: 0rem !important;
+   }
+   .planner1{
+    margin-bottom: 5rem;
+   }
+   .plan p {
+    width: 7rem;
+    font-size: 0.5rem !important;
+  }
+  .quizzes h2{
+    margin-top: 0rem;
+  }
+  .quizzes p{
+    font-size: 0.4rem !important;
+  }
+  .error-book h2{
+    margin-bottom: 0rem;
+  }
+  .error-book p{
+    font-size: 0.4rem !important;
+  }
+  .growth{
+    margin-top: 0 !important;
+    margin-left: 0rem;
+  }
+  .growth h2{
+    font-size: 0.7rem !important;
+    margin-bottom: 0px;
+  }
+  .growth p{
+    font-size: 0.4rem !important;
+    width: 6rem;
+  }
+  .library h2 {
+    margin-top: 0rem;
+    font-size: 0.7rem !important;
+  }
+  .library p{
+    font-size: 0.5rem !important;
+  }
+  .workshop-text{
+    margin-top: 0rem;
+    margin-left: 0rem !important;
+  }
+  .workshop-text h2{
+
+    font-size: 0.7rem !important;
+  }
+  .workshop-text p{
+    width: 6rem;
+    font-size: 0.4rem !important;
+  }
+  .revision h2{
+    font-size: 0.8rem !important;
+  }
+  .revision p{
+    font-size: 0.5rem !important;
+  }
+  .more-coming h2{
+    margin-top: 0rem;
+    font-size: 0.6rem;
+  }
+  
+  .more-coming p{
+    font-size: 0.4rem !important;
+  }
+  .study-room p {
+    font-size: 0.4rem !important;
+
+  }
 }
