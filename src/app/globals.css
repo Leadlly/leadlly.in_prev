@@ -60,9 +60,6 @@ body {
   .solution{
     width: 100vw;
   }
-  .problem{
-    width: 100vw;
-  }
   .solution-button{
     width: 40vw;
     padding: 0.3rem;
@@ -86,7 +83,13 @@ body {
     margin-left: 0 !important;
   }
 }
-@media (min-width: 540px) and (max-width: 768px) {
+@media (min-width: 484px) and (max-width: 692px) {
+  .ima{
+    width: 40%;
+  }
+  .hero{
+   margin-bottom: 13%;
+  }
   .contact-button {
     width: 40vw !important;
     font-size: 0.9rem !important;
@@ -100,6 +103,11 @@ body {
   .contact {
     margin-left: 0 !important;
   }
+}
+@media (min-width: 692px) and (max-width: 768px) {
+  .hero{
+    margin-bottom: 20%;
+   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .solution{

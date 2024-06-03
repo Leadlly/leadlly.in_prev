@@ -15,7 +15,7 @@ import vector from "../../../../app/assets/Vector.png";
 const Hero = () => {
   return (
     <>
-      <section className="overflow-hidden bg-gradient relative flex flex-col">
+      <section className="bg-gradient relative flex flex-col">
         {/* Desktop and Tablet Section */}
         <div className="hidden md:flex flex-col md:flex-row justify-between mt-[7%] md:mb-[10%] lg:mb-[10%] lg:gap-5 px-8 lg:px-20 h-auto">
           <div className="2xl:w-[700px] lg:w-[60%] mb-8 md:mb-0">
@@ -113,7 +113,7 @@ const Hero = () => {
         </div>
 
         {/* Mobile Section */}
-        <div className="md:hidden h-[60vh]">
+        <div className="relative hero mb-[8%] md:hidden">
           <div className="flex flex-col ml-[5vw] w-[95vw] my-[5vh] h-auto">
             <div className="flex w-[80%] h-auto">
               <div className="mt-10 rounded-xl bg-gradient-to-r bg-clip-text from-purple-600 to-[#5900d9] font-sans font-bold">
@@ -163,7 +163,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex w-full py-5">
-              <div className="absolute w-[50%]">
+              <div className="absolute ima w-[50%]">
                 <Image src={mentor} alt="mentor" />
               </div>
 

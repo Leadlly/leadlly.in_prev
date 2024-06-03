@@ -1,7 +1,5 @@
 .carousel {
   position: relative;
-  width: 80%;
-  max-width: 90%;
   margin: auto;
 }
 
@@ -218,6 +216,7 @@
   .carousel-button {
     top: 105%;
     font-size: 1rem;
+    margin-top: 20px;
   }
 
   .button1 {
@@ -229,7 +228,7 @@
   }
 
   .carousel {
-    width: 50%;
+    width: 70%;
   }
 
   .carousel-item {
@@ -323,4 +322,3 @@
     font-weight: 400;
   }
 }
-

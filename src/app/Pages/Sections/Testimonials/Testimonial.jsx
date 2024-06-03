@@ -36,7 +36,7 @@ const ComponentName = () => {
             </span>
           </Heading>
         </div>
-        <div className="w-full mb-[7rem]">
+        <div className="w-[100%] mb-[7rem]">
           <Carousel />
         </div>
         {/* <div className="contact text-center w-full mt-[3rem]">
