@@ -1,0 +1,223 @@
+
+@media (min-width: 250px) and (max-width: 540px) {
+    .solution {
+      width: 100vw;
+    }
+    .problem {
+      width: 100vw;
+    }
+    .solution-button {
+      width: 40vw;
+      padding: 0.3rem;
+      font-size: 0.9rem;
+    }
+    .contact-button {
+      margin: 0 !important;
+      width: 80vw !important;
+      font-size: 1rem !important;
+    }
+    .card-container {
+      padding: 0.5rem;
+      width: 100% !important;
+      height: 40vh !important;
+    }
+    .card {
+      margin: 0 !important;
+    }
+    .contact {
+      margin-left: 0 !important;
+    }
+  }
+  @media (min-width: 540px) and (max-width: 768px) {
+    .contact-button {
+      width: 40vw !important;
+      font-size: 0.9rem !important;
+      margin: 0 !important;
+      width: 50% !important;
+      height: 45vh !important;
+    }
+    .card {
+      margin: 0 !important;
+    }
+    .contact {
+      margin-left: 0 !important;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .solution {
+      width: 70vw;
+    }
+    .contact-button {
+      width: 40vw !important;
+      font-size: 0.9rem !important;
+    }
+    .card-container {
+      padding: 0.5rem;
+      width: 50% !important;
+      height: 30vh !important;
+    }
+    .card {
+      margin-left: 0rem !important;
+    }
+    .contact {
+      margin-left: 0rem !important;
+    }
+    .problem {
+      width: 180vw;
+    }
+    .gradient-text {
+      font-weight: 800;
+    }
+    .solution-button {
+      width: 25vw;
+      padding: 0.3rem;
+    }
+    .hero-button {
+      width: 40vw !important;
+      padding: 0.5rem;
+      font: 18px;
+    }
+  }
+  .solution {
+    width: 50vw;
+  }
+  .problem {
+    width: 50vw;
+  }
+ 
+  .contact-us-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 20rem 10rem 20rem;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 80%;
+  }
+  
+  .contact-us-card {
+    background-color: #eee4fb;
+    border-radius: 50px;
+    padding: 22px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 70%;
+    height: 40vh;
+  }
+  .rectangle {
+    width: 40%;
+    height: 20%;
+    background-color: #ffffff;
+  }
+  .contact-us-card h2 {
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+  
+  .underline {
+    width: 2px;
+    height: 202px;
+    background-color: #8000ff;
+  }
+  
+  .contact-us-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 33px;
+    padding: 2rem 8rem 2rem 0rem;
+  }
+  
+  .integer-button {
+    background-color: transparent;
+    border: 2px solid #8000ff;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 12rem;
+  }
+  .integer-button:hover {
+    background-color: #8000ff;
+    color: #fff;
+  }
+  
+  .contact-us-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .side-image {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20px;
+  }
+  .contact-button {
+    background-color: #ffb35c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 30vw;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .contact-button {
+      font-size: 4vw;
+      padding: 1rem 2rem;
+      width: 80vw;
+    }
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee4fb;
+    border-radius: 20px;
+    width: 30%;
+    height: 40vh;
+    max-width: 90%;
+    max-height: 80vh;
+  }
+  
+  .card-content {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .horizontal-bar {
+    width: 90%; /* Relative width */
+    height: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
