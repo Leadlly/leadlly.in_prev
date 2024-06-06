@@ -8,6 +8,7 @@ import growth1 from "../assets/about/growth1.png"
 import growth2 from "../assets/about/growth2.png"
 import revision from "../assets/about/revision.png"
 import workshop from "../assets/about/workshop.png"
+import "./About.css"
 export const Different = () => {
   return (
     <section className="overflow-hidden bg-gradient flex flex-col items-center py-8">
@@ -29,11 +30,11 @@ export const Different = () => {
             xl: "3.5rem",
           }}
         >
-          <span className="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem]">
+          <span className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem]">
             How are we
           </span>
           <br />
-          <span className="gradient-text">Diffferent?</span>
+          <span className="gradient-text text-[3rem] md:text-[80px] lg:text-[100px]">Diffferent?</span>
         </Heading>
       </div>
 
@@ -76,12 +77,12 @@ export const Different = () => {
         <p>It provides access to educational resources, such as e-books, articles, and videos, for research and study.</p>
       </div>
     
-      <div className="feature-item dashboard">
+      <div className="feature-item  revision">
         <h2>Revision Tracker</h2>
         <p>It will monitor progress, pinpoint areas needing improvement, and strategically allocate your revision time.</p>
         <Image src={revision} alt="Dashboard" />
       </div>
-      <div className="feature-item planner">
+      <div className="feature-item workshop">
         <div className="workshop-text">
         <h2>Workshop</h2>
         <p>Develop critical thinking skills, master problem-solving strategies, and discover effective study methods.</p>

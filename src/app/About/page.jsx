@@ -4,6 +4,7 @@ import about from "../assets/about/about-top.png";
 import { Heading } from "@chakra-ui/react";
 import mission from "../assets/about/mission.png";
 import { Different } from "./Different";
+import "./About.css"
 
 export default function About() {
   return (
@@ -40,11 +41,11 @@ export default function About() {
               xl: "3.5rem",
             }}
           >
-            <span className="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem]">
+            <span className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem]">
               Our
             </span>
             <br />
-            <span className="gradient-text ">Mission!</span>
+            <span className="gradient-text text-[3rem] md:text-[80px] lg:text-[100px]">Mission!</span>
           </Heading>
         </div>
         <div className="flex justify-center items-center h-full  ml-4 mr-4 mt-4 md:mt-8">
@@ -72,11 +73,11 @@ export default function About() {
               xl: "3.5rem",
             }}
           >
-            <span className=" text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem]">
+            <span className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem]">
               The Leadlly
             </span>
             <br />
-            <span className="gradient-text ">Team</span>
+            <span className="gradient-text text-[3rem] md:text-[80px] lg:text-[100px]">Team</span>
           </Heading>
         </div>
 

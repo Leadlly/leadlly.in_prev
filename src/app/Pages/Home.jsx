@@ -4,7 +4,7 @@ import Problem from'./Sections/Problem/Problem.jsx';
 import Solutions from './Sections/Solutions/Solutions.jsx';
 import Testimonial from './Sections/Testimonials/Testimonial.jsx';
 import  {Contact}  from './Sections/Contact/Contact';
-
+import "./Home.css";
 
 
 export default function Main() {
