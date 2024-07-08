@@ -23,12 +23,11 @@ export default function Footer(){
             <div className="flex flex-col ml-[25vw] w-[40vw] md:w-[40vw] h-full ">
             <div className="md:mx-auto  text-[#5a10d9]"><h1 className="mt-5 leading-tight font-lato mb-2 text-[1.2rem]  md:text-[1.6rem] font-bold ">Important Links </h1>
             <h2 className="text-[0.8rem] md:text-[1rem]">
-            <a href="https://forms.gle/rGuHFN2JwULDVVGAA">Contact Us</a>
-            <br/> <Link href="/">Become a Mentor</Link>
-            <br/> <Link href="/About">About Us</Link>
-            <br/> <a href="https://question-bank-web-flame.vercel.app" target="_blank">Question Bank</a>
-            
-            </h2> 
+      <Link href="/About">About Us</Link> <br />
+      <a href="https://forms.gle/rGuHFN2JwULDVVGAA">Contact Us</a><br />
+      <b><a href="mailto:business@leadlly.in">business@leadlly.in</a> </b><br />
+      <b><a href="tel:+916387317060">+91 6387317060</a></b>
+    </h2>
             </div>
 
             <div className="mx-auto"><h1 className="mt-[10%]  font-lato  text-[#5a10d9] text-[1.2rem] md:text-[1.6rem] font-bold ">Follow us <br /></h1></div>
